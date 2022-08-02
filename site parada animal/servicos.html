@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descrição do meu site">
+  <meta name="keywords"
+    content="petshop, pet shop, ração, rações, banho e tosa, veterinaria, ração de cahorro, ração de gato, roupa de frio para cachorro, roupa de frio para gato">
+  <meta name="theme-color" content="green">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+  <title>Meu site Materializado</title>
+</head>
+
+<body>
+  <!-- navegação desktop -->
+  <nav>
+    <div class="nav-wrapper purple accent-1">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo center"><img src="img/logo.jpg" alt="Logo"></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="home.html" class="white-text">HOME</a></li>
+        <li><a href="empresa.html" class="white-text">EMPRESA</a></li>
+        <li><a href="servicos.html" class="white-text">SERVIÇOS</a></li>
+        <li><a href="contatos.html" class="white-text">CADASTRO</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navegação mobile -->
+  <ul class="sidenav purple accent-1" id="mobile-demo">
+    <li class="center-align"><img src="img/logo.jpg" alt="logo" width="100px"></li>
+    <li><a href="home.html" class="white-text">HOME</a></li>
+    <li><a href="empresa.html" class="white-text">EMPRESA</a></li>
+    <li><a href="servicos.html" class="white-text">SERVIÇOS</a></li>
+    <li><a href="contatos.html" class="white-text">CADASTRO</a></li>
+  </ul>
+
+
+  <!-- conteudo do site -->
+  <main>
+
+    <div class="container">
+      <div class="card-panel col s12">
+        <h1 class="tituloPadrao purple-text"> <i class="medium material-icons">contacts</i> Cadastro</h1>
+
+
+        <div class="row">
+          <div class="col s12">
+            <form action="#" method="post">
+              <div class="input-field col s12 m6">
+                <input type="text" name="nome" id="nome" class="validate" placeholder="Informe seu nome completo">
+                <label for="nome">Nome</label>
+              </div>
+
+              <div class="input-field col s12 m6"><input type="text" name="cpf" id="cpf" class="validate">
+                <label for="cpf">CPF</label>
+              </div>
+
+              <div class="input-field col s12 m3">
+                <input type="text" name="CEP" id="CEP" class="validate" placeholder="##.###.##">
+                <label for="CEP">CEP</label>
+              </div>
+
+              <div class="input-field col s12 m9">
+                <input type="text" name="logradouro" id="logradouro" class="validate">
+                <label for="CEP">Logradouro</label>
+              </div>
+
+              <div class="input-field col s3 m1">
+                <input type="text" name="numero" id="numero" class="validate">
+                <label for="numero">N°</label>
+              </div>
+
+              <div class="input-field col s9 m2">
+                <input type="text" name="complemento" id="complemento" class="validate">
+                <label for="CEP">Complemento</label>
+              </div>
+
+              <div class="input-field col s12 m3">
+                <select name="estado" id="estado">
+                  <option value="">Selecione seu estado</option>
+                  <option value="12">AC</option>
+                  <option value="27">AL</option>
+                  <option value="13">AM</option>
+                  <option value="16">AP</option>
+                  <option value="29">BA</option>
+                  <option value="23">CE</option>
+                  <option value="53">DF</option>
+                  <option value="32">ES</option>
+                  <option value="52">GO</option>
+                  <option value="21">MA</option>
+                  <option value="51">MT</option>
+                  <option value="50">MS</option>
+                  <option value="31">MG</option>
+                  <option value="15">PA</option>
+                  <option value="25">PB</option>
+                  <option value="41">PR</option>
+                  <option value="26">PE</option>
+                  <option value="22">PI</option>
+                  <option value="33">RJ</option>
+                  <option value="24">RN</option>
+                  <option value="11">RO</option>
+                  <option value="43">RS</option>
+                  <option value="14">RR</option>
+                  <option value="42">SC</option>
+                  <option value="28">SE</option>
+                  <option value="35">SP</option>
+                  <option value="17">TO</option>
+                </select>
+              </div>
+
+              <div class="input-field col s12 m6">
+                <input type="text" name="cidade" id="cidade" class="validate">
+                <label for="cidade">Cidade</label>
+              </div>
+
+              <div class="row">
+                <div class="col s12 m1 row">
+                  <label for="">Alérgico?</label>
+                </div>
+                <div class="input-field col s12 m5">
+                  <div class="display:block">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="alergias">
+                      <span>Pele</span>
+                    </label>
+  
+                    <label>
+                      <input type="checkbox" class="filled-in" name="alergias">
+                      <span>Respiratoria</span>
+                    </label>
+  
+                    <label>
+                      <input type="checkbox" class="filled-in" name="alergias">
+                      <span>Alimentar</span>
+                    </label>
+  
+                    <label>
+                      <input type="checkbox" class="filled-in" name="alergias">
+                      <span>Medicamentosa</span>
+                    </label>
+                  </div>
+                </div>
+  
+                <div class="col s12 m1">
+                
+                    <label for="sexo">Sexo?</label>
+               
+                </div>  
+  
+                  <div class="input-field col s12 m5">
+                    <div>
+                      <label>
+                        <input type="radio" name="sexo">
+                        <span>Masculino</span>
+                      </label>
+  
+                      <label>
+                        <input type="radio" name="sexo">
+                        <span>Feminino</span>
+                      </label>
+                    </div>
+                  </div>
+              </div>
+
+                <div class="input-field col s12 m6">
+                  <textarea name="mensagem" id="mensagem" class="materialize-textarea"></textarea>
+                  <label for="mensagem">Mensagem</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                  <input type="email" name="email" id="email" class="validate">
+                  <label for="email">E-mail</label>
+                  <span class="helper-text" data-error="E-mail inválido" data-success="E-mail Válido">Informe um e-mail válido</span>
+
+                </div>
+         
+
+          </div>
+
+        </div>
+
+
+        </form>
+      </div>
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+  </main>
+
+  <!-- inicio do rodape -->
+  <footer class="page-footer purple accent-1">
+    <div class="footer-copyright purple accent-1">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 center-align">© 2022 Todos os direitos reservados</div>
+          <div class="col s12 m6 center-align"><a class="grey-text text-lighten-4" href="#!">Feito por <span
+                class="decorationLink">Mikaelen Oliveira</span> </a></div>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <!-- fim do rodape -->
+
+  <script src="js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/contatos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Parada Animal</title>
+    
+</head>
+<body>
+    <!-- Inicio navegação  -->
+    <nav class="navPrincipal">
+        <img src="img/5484218-logotipo-de-amor-de-gato-e-cachorro-grátis-vetor.jpg" width="200px" height="200px" alt="Logo ">
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="empresa.html">Empresa</a></li>
+            <li class="menu-item"><a href="servicos.html">Serviços</a></li>
+            <li class="menu-item"><a href="contatos.html">Contatos</a></li>
+        </ul>
+        <span class="hoje">Varzea Grande, 20 de junho de 2022</span>
+    </nav>
+    <!-- Fim navegação  -->
+
+    <!-- Inicio conteudo  -->
+    <main class="container">
+        <h1 class="tituloPadrao"> <i class="icofont-ui-contact-list"></i> Cadastro</h1>
+
+        <form action="contatos.html" method="post" class="formCadastro">
+
+            <div class="formField nome" >
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="formField telefone">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="(65)99999-9999">
+                <!-- atributo readonly nao deixa alterar o valor  -->
+                <!-- <input type="text" name="telefone" id="telefone" value="65992820129" readonly> -->
+                <!-- atributo disabled: desabilita o campo e ele não sera enviado para a requisição  -->
+                <!-- <input type="text" name="telefone" id="telefone" value="65992820129" disabled > -->
+            </div>
+
+            <div class="formField sexo">
+                <label for="sexo">Sexo</label>
+                <input type="radio" name="sexo" id="sexo" value="M"> Masc
+                <input type="radio" name="sexo" id="sexo" value="F"> Fem
+            </div>
+
+            <div class="formField alergias">
+                <label for="alergias">Alérgias?</label>
+                <!-- checkbox, permite selecionar varios itens  --> 
+                <!-- atalho para criar varios input:checkbox*quantidade -->
+                <div class="inputs">
+                    <input type="checkbox" name="" id="alergias" value="Pele"> Pele
+             
+                </div>
+
+                <div class="inputs">
+                    <input type="checkbox" name="alergias" id="alergias" value="Alimentar"> Alimentar
+                </div>
+
+                <div class="inputs">
+                    <input type="checkbox" name="alergias" id="alergias" value="Medicamentosa"> Medicamentosa
+                </div>
+
+                <div class="inputs">
+                    <input type="checkbox" name="alergias" id="alergias" value="Respiratória"> Respiratória            
+                </div>
+            </div>
+
+            <div class="formField estado">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option value="">Selecione o Estado</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="BA">Bahia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    
+                </select>
+            </div>
+
+            <div class="formField cidade">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade">
+            </div> 
+
+            <div class="formField email">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="formField senha">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <div class="formField csenha">
+                <label for="csenha">Confirme sua senha</label>
+                <input type="password" name="csenha" id="csenha">
+            </div>
+
+            <div class="formField mensagem">
+                <label for="mensagem">Sua mensagem sobre o site</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+            </div>
+           
+
+
+
+            <!-- input oculto -->
+            <input type="hidden" name="datacadastro" value="2022-06-22">
+
+            <button type="submit">ENVIAR</button>               
+
+        </form>
+    
+       
+    </main>
+    
+    <footer>
+        <span classe="direitosAutorais">&copy; todos direitos autorais reservados</span>
+        <span class="assinatura"><a href="#">Mikaelen Oliveira</a></span>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+.container .widGets{
+    height: 450px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+/* pagina home */
+.container .widGetHome {
+    width: 30%;
+    /* height: 300px; */
+    display: block;
+    float: left;
+    margin: 0 1%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.container .widGetHome img {
+    max-width: 100%;
+    height: 20em;
+    width: 30em;
+    max-height: 100%;
+
+}
+
+.container .widGetHome h2,
+.container .widGetHome span {
+    color: #fff;
+    text-align: center;
+    
+}
+
+.container .widGetHome span {
+    font-size: 12px;
+}
+
+.container .widGetHome .titulo {
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.container .widGetHome .valor {
+    font-size: 16px;
+    color: yellow;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .widGetHome a.btn {
+    display: block;
+    width: 100%;
+    height: 27px;
+    background-color: rgb(240, 145, 227);
+    text-align: center;
+    color: white;
+    padding: 4px 0;
+    text-transform: uppercase;
+}
+
+.container .widGetHome a.btn:hover {
+    background-color: pink;
+    color: black;
+}
+
+.container .widGetHome.cupom span{
+    display: block;
+    font-size: 30px;
+    height: 320px;
+    text-align: center;
+}
+
+.container .widGetHome.cupom span.descricao{
+    padding-top: 40px;
+}
+
+.container .widGetHome.cupom span.descricao b{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 4px;
+    background-color: yellow;
+    color: red;
+    font-size: 60px;
+    border-radius: 5px;
+    font-weight: 900;
+    border: 2px dotted red;
+}
+
+.container .widGetHome.cupom .codeBox{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .widGetHome.cupom .codeBox span{
+    display: block;
+    background-color: white;
+    width: 70%;
+    height: 35px;
+    color: red;
+    font-size: 25px;
+    float: left
+}
+
+.container .widGetHome.cupom .codeBox a{
+    display: block;
+    width: 20%;
+    float: left;
+    background-color: yellow;
+    height: 35px;
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}

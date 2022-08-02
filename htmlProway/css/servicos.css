@@ -1,0 +1,42 @@
+.container{
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px 05px 80px 05px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+table.servicos{
+    width: 100%;
+    border-spacing: 1px;
+    background: grey;
+    text-align: center;
+}
+
+
+table.servicos tr th{
+    background: rgb(248, 136, 155);
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+table.servicos tr{
+    background: white;
+
+}   
+table.servicos tr:nth-child(even) td{
+    background-color: pink;
+}
+
+table.servicos tr:nth-child(odd) td{
+    background-color: rgb(241, 221, 224);
+}
+
+table.servicos tr:hover td{
+    background-color:rgb(248, 136, 155);
+}
+
+.youtube{
+    text-align: center;
+    padding: 25px;
+}

@@ -1,0 +1,113 @@
+:root{
+  --roxoPadrao: #ea80fc; 
+}
+
+
+/* Ajustes para fixar o rodape sempre no final da pagina */
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+    padding: 20px 0;
+  }
+
+/* fonte padrão do sistema -- Poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i{
+    height: 80px;
+    line-height: 80px;
+  }
+
+nav .brand-logo img{
+    width: 80px;
+}   
+
+nav ul a, 
+.sidenav li>a{
+    font-weight: 700;
+}
+
+.btnTotal{
+  width: 100%;
+}
+
+.chipAbsolute{
+  position: absolute;
+  right: 15px;
+  bottom: -20px;
+  font-size: 25px;
+}
+
+.decorationLink{
+  text-decoration: underline;
+
+}
+
+.tituloPadrao{
+  border-bottom: 2px solid var(--roxoPadrao);
+}
+
+blockquote{
+  border-color: var(--roxoPadrao) ;
+  text-align: justify;
+  font-size: 1.50rem;
+ 
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.tabelaPadrao thead th{
+  background-color: var(--roxoPadrao) ;
+
+}
+.tabelaPadrao tbody tr{
+  background-color: #e1bee7;
+
+}
+
+.tabelaPadrao tr:nth-child(odd){
+  background-color: #f3e5f5
+}
+
+input{
+  border-color: var(--roxoPadrao)!important;
+}
+
+input:focus{
+  border-color: var(--roxoPadrao)!important;
+  box-shadow: 0 1px 0 0 var(--roxoPadrao)!important;
+}
+
+.input-field>label{
+  color: var(--roxoPadrao)!important;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+  color: var(--roxoPadrao);
+}
+
+.select-wrapper input.select-dropdown{
+  color: var(--roxoPadrao);
+}
+
+[type="checkbox"]+span:not(.lever),
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span{
+  padding-left: 25px;
+  margin-right: 20px;
+  color: var(--roxoPadrao);
+}
+label{
+  color: var(--roxoPadrao);
+}

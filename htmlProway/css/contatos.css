@@ -1,0 +1,108 @@
+.container{
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px 05px 80px 05px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.formField{
+    margin:5px;
+    display: inline-block;
+}
+
+/* utilizando pseudo seletores tag[atributo="valor"] */
+.formField input[type="text"], 
+.formField input[type="email"], 
+.formField input[type="password"], 
+.formField select,
+.formField textarea{
+    width: 100%;
+    height: 30px;
+}
+
+.formField textarea{
+    height: 150px;
+}
+
+.formField label[for="sexo"],
+.formField label[for="alergias"]{
+    display: block;
+}
+
+.formField input[value="F"],
+{
+    margin-left: 50px;
+}
+
+.formCadastro button{
+    width: 150px;
+    height: 35px;
+    background-color: pink;
+    border: 0;
+    color: white;
+    font-size: large;
+    border-radius: 2px;
+
+}
+
+/* tratamento de colunas nos campos */
+
+.formField.nome,
+.formField.telefone,
+.formField.sexo{
+    width: 30%;
+   
+}
+
+.formField.alergias{
+    width: 100%;
+}
+
+.formField.alergias .inputs{
+    width: 25%;
+    min-width: 110px;
+    display: inline-block;
+    margin: 4px 0;
+}
+
+.formField.estado,
+.formField.cidade,
+.formField.senha,
+.formField.csenha{
+
+    width: 40%;
+}
+
+.formField.email,
+.formField.mensagem{
+    width: 82%;
+}
+
+
+/* media query para definir que regras serão aplicadas para viewport (tela) ate 640px  */
+@media screen and (max-width:640px){
+    .formField {
+        display: block;
+        margin: 0;
+    }
+
+    .formField.nome,
+    .formField.telefone,
+    .formField.sexo,
+    .formField.alergias,
+    .formField.estado,
+    .formField.cidade,
+    .formField.email,
+    .formField.senha,
+    .formField.csenha,
+    .formField.mensagem{
+        width: 100%;
+    }
+
+    .formCadastro button{
+        width: 100%;
+    }
+
+    
+}
